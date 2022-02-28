@@ -1,0 +1,17 @@
+---
+# Latin comment
+# Киррилический комментарий
+
+ParentParam1:
+  ChildParam:
+    Level2Param: Value1
+    # Level2 comment
+    Level2Param2: Киррилическое значение
+ParamLevel0:
+  ParamLevel2:
+    SubParam:
+      BoolParam: false
+      List:
+      - 0.0.0.0/24
+      - 192.168.15.15/24
+      ParamETC: 192.168.8.1

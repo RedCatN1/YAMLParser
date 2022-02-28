@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="14">
+      <Unit0>
+        <Filename Value="ParserTest.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="43"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="25"/>
+        <CursorPos X="35" Y="45"/>
+        <UsageCount Value="43"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="yamlparser.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="YAMLParser"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="171"/>
+        <CursorPos X="39" Y="183"/>
+        <UsageCount Value="43"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="C:\lazarus\fpc\3.2.0\source\rtl\win64\classes.pp"/>
+        <UnitName Value="Classes"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="53"/>
+        <UsageCount Value="8"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="C:\lazarus\fpc\3.2.0\source\rtl\win\sysutils.pp"/>
+        <UnitName Value="SysUtils"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="136"/>
+        <UsageCount Value="8"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="C:\lazarus\lcl\forms.pp"/>
+        <UnitName Value="Forms"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="892"/>
+        <UsageCount Value="8"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="C:\lazarus\lcl\controls.pp"/>
+        <UnitName Value="Controls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="46"/>
+        <UsageCount Value="8"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="C:\lazarus\lcl\menus.pp"/>
+        <UnitName Value="Menus"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="399"/>
+        <CursorPos X="22" Y="424"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="C:\lazarus\lcl\widgetset\wsmenus.pp"/>
+        <UnitName Value="WSMenus"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="238"/>
+        <UsageCount Value="8"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="K:\RedCatControls\catmenu.pas"/>
+        <UnitName Value="CatMenu"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="17"/>
+        <CursorPos Y="34"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="C:\lazarus\fpc\3.2.0\source\packages\fv\src\menus.pas"/>
+        <UnitName Value="Menus"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="19"/>
+        <UsageCount Value="10"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="C:\lazarus\fpc\3.2.0\source\rtl\objpas\sysutils\sysstrh.inc"/>
+        <EditorIndex Value="4"/>
+        <CursorPos X="14" Y="105"/>
+        <UsageCount Value="18"/>
+        <Loaded Value="True"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="C:\lazarus\lcl\include\treeview.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="58"/>
+        <CursorPos Y="56"/>
+        <UsageCount Value="10"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="C:\lazarus\lcl\interfaces\win32\win32memostrings.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="49"/>
+        <CursorPos Y="62"/>
+        <UsageCount Value="10"/>
+      </Unit13>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="156" TopLine="136"/>
+      </Position1>
+      <Position2>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="167" TopLine="152"/>
+      </Position2>
+      <Position3>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="253" TopLine="238"/>
+      </Position3>
+      <Position4>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="50" TopLine="34"/>
+      </Position4>
+      <Position5>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="52" TopLine="34"/>
+      </Position5>
+      <Position6>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="93" TopLine="69"/>
+      </Position6>
+      <Position7>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="95" TopLine="71"/>
+      </Position7>
+      <Position8>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="151" TopLine="136"/>
+      </Position8>
+      <Position9>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="156" TopLine="136"/>
+      </Position9>
+      <Position10>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="167" TopLine="152"/>
+      </Position10>
+      <Position11>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="253" TopLine="238"/>
+      </Position11>
+      <Position12>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="50" TopLine="34"/>
+      </Position12>
+      <Position13>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="52" TopLine="34"/>
+      </Position13>
+      <Position14>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="53" TopLine="34"/>
+      </Position14>
+      <Position15>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="54" TopLine="34"/>
+      </Position15>
+      <Position16>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="87" Column="26" TopLine="64"/>
+      </Position16>
+      <Position17>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="285" TopLine="269"/>
+      </Position17>
+      <Position18>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="341" Column="26" TopLine="317"/>
+      </Position18>
+      <Position19>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="328" TopLine="317"/>
+      </Position19>
+      <Position20>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="330" TopLine="317"/>
+      </Position20>
+      <Position21>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="331" TopLine="317"/>
+      </Position21>
+      <Position22>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="332" TopLine="317"/>
+      </Position22>
+      <Position23>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="333" TopLine="317"/>
+      </Position23>
+      <Position24>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="334" TopLine="317"/>
+      </Position24>
+      <Position25>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="335" Column="3" TopLine="317"/>
+      </Position25>
+      <Position26>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="328" TopLine="317"/>
+      </Position26>
+      <Position27>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="141" TopLine="121"/>
+      </Position27>
+      <Position28>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="338" TopLine="321"/>
+      </Position28>
+      <Position29>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="311" TopLine="334"/>
+      </Position29>
+      <Position30>
+        <Filename Value="yamlparser.pas"/>
+        <Caret Line="356" Column="13" TopLine="339"/>
+      </Position30>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
