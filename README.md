@@ -38,3 +38,5 @@ Function DeleteYAMLParam(ParamFromPosition,ParamToPosition:Integer):integer;
 Deletes parameters, From position - start To position - end, always returns 0
 Function InsertYAMLParam(ParamCaption,ParamValue,ParamComment:String;ParamLevel,ParamPosition:Integer):integer; 
 Inserts a parameter, always returns 0
+
+To build, you will need FPC version 3.2.0 or higher. Thanks to the guys from the forum https://forum.lazarus.freepascal.org/ for their help
