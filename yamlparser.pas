@@ -55,14 +55,12 @@ ParamParsed:=False;
 if copy(ProcessingStr,0,3)='---' then
 begin
 ParamParsed:=True;
-//ProcessingStr:='';
 //StreamStart
 end;
 
 if copy(ProcessingStr,0,3)='...' then
 begin
 ParamParsed:=True;
-//ProcessingStr:='';
 //StreamEnd
 end;
 
@@ -74,8 +72,6 @@ while Pos(' ',ProcessingStr)<>0 do
 begin
 if Copy(ProcessingStr,1,1)=' ' then
 Delete(ProcessingStr,1,1)
-//Delete(ProcessingStr,1,1)
-//ProcessingStr[u]:=Char('')
 else
 Break;
 inc(u,1);
@@ -86,25 +82,8 @@ goto EndLvlChange;
 end;
 SetLength(YAMLObjects,Length(YAMLObjects)+1);
 Inc(YAMLObjectsCount,1);
-{for u:=0 to Length(ProcessingStr) do
-begin
-if ProcessingStr[u]=#0 then
-
-//Delete(ProcessingStr,1,1)
-//ProcessingStr[u]:=Char('')
-else
-Break;
-end;}
 ProcessingSubStr:='';
 YAMLObjects[Length(YAMLObjects)-1].Level:=u;
-
-
-//Delete(ProcessingStr,1,u+1);
-{if (Copy(ProcessingStr,u,1)='#') or (Copy(ProcessingStr,u,2)=' #') then
-begin
-YAMLObjects[Length(YAMLObjects)-1].Caption:=Copy(ProcessingStr,u,Length(ProcessingStr));
-YAMLObjects[Length(YAMLObjects)-1].IsComment:=True;
-end;}
 If Pos('#',ProcessingStr)<>0 then
 begin
 ProcessingSubStr:=Copy(ProcessingStr,Pos('#',ProcessingStr),Length(ProcessingStr));
@@ -122,7 +101,7 @@ YAMLObjects[Length(YAMLObjects)-1].Caption:=Copy(ProcessingStr,0,Pos(':',Process
 Delete(ProcessingStr,1,Pos(':',ProcessingStr));
 
 if i+1 < YAMLConfig.Count then
-If (Pos('-',YAMLConfig[i+1])<>0) and (Copy(YAMLConfig[i+1],Pos('-',YAMLConfig[i+1])-1,1)=' ') then //(Copy(YAMLConfig[i+1],0,Pos('-',YAMLConfig[i+1])-1)<>'/') then
+If (Pos('-',YAMLConfig[i+1])<>0) and (Copy(YAMLConfig[i+1],Pos('-',YAMLConfig[i+1])-1,1)=' ') then
 begin
 for z:=i+1 to YAMLConfig.Count-1 do
 begin
@@ -130,9 +109,6 @@ if Pos('-',YAMLConfig[Z])<>0 then
 begin
 ValList.Add(Copy(YAMLConfig[Z],Pos('-',YAMLConfig[Z]),Length(YAMLConfig[Z])));
 tmpstr:=Copy(YAMLConfig[Z],Pos('-',YAMLConfig[Z]),Length(YAMLConfig[Z]));
-//,tmpstr2
-//YAMLConfig.Delete(Z);
-//YAMLConfig.Insert(Z,'');
 end
 else
 begin
@@ -144,15 +120,11 @@ Break;
 end;
 end;
 YAMLObjects[Length(YAMLObjects)-1].IsList:=True;
-//Pos('/-',YAMLConfig[i+1])+1<>Pos('-',YAMLConfig[i+1])
 end;
-//else
 if YAMLObjects[Length(YAMLObjects)-1].IsList=false then
 YAMLObjects[Length(YAMLObjects)-1].Value:=Copy(ProcessingStr,0,Length(ProcessingStr));
 EndLvlChange:
-
 ParamParsed:=True;
-//ProcessingStr:='';
 //ChangeLevel
 end;
 
@@ -163,7 +135,6 @@ Inc(YAMLObjectsCount,1);
 YAMLObjects[Length(YAMLObjects)-1].Comment:=ProcessingStr;
 YAMLObjects[Length(YAMLObjects)-1].IsComment:=True;
 ParamParsed:=True;
-//ProcessingStr:='';
 //Comment
 end;
 
@@ -174,36 +145,19 @@ while Pos(' ',ProcessingStr)<>0 do
 begin
 if Copy(ProcessingStr,1,1)=' ' then
 Delete(ProcessingStr,1,1)
-//Delete(ProcessingStr,1,1)
-//ProcessingStr[u]:=Char('')
+
 else
 Break;
 inc(u,1);
 end;
+If Copy(ProcessingStr,0,1)='-' then
 begin
 goto EndLvl0Proc;
 end;
 SetLength(YAMLObjects,Length(YAMLObjects)+1);
 Inc(YAMLObjectsCount,1);
-{for u:=0 to Length(ProcessingStr) do
-begin
-if ProcessingStr[u]=#0 then
-
-//Delete(ProcessingStr,1,1)
-//ProcessingStr[u]:=Char('')
-else
-Break;
-end;}
 ProcessingSubStr:='';
 YAMLObjects[Length(YAMLObjects)-1].Level:=u;
-If Copy(ProcessingStr,0,1)='-' then
-
-//Delete(ProcessingStr,1,u+1);
-{if (Copy(ProcessingStr,u,1)='#') or (Copy(ProcessingStr,u,2)=' #') then
-begin
-YAMLObjects[Length(YAMLObjects)-1].Caption:=Copy(ProcessingStr,u,Length(ProcessingStr));
-YAMLObjects[Length(YAMLObjects)-1].IsComment:=True;
-end;}
 If Pos('#',ProcessingStr)<>0 then
 begin
 ProcessingSubStr:=Copy(ProcessingStr,Pos('#',ProcessingStr),Length(ProcessingStr));
@@ -213,21 +167,13 @@ if (ProcessingStr='') or (ProcessingStr=#0) then
 begin
 YAMLObjects[Length(YAMLObjects)-1].Caption:=ProcessingSubStr;
 YAMLObjects[Length(YAMLObjects)-1].IsComment:=True;
-//Break;
 end;
 if ProcessingSubStr<>'' then
 YAMLObjects[Length(YAMLObjects)-1].Comment:=ProcessingSubStr;
 YAMLObjects[Length(YAMLObjects)-1].Caption:=Copy(ProcessingStr,0,Pos(':',ProcessingStr)-1);
 Delete(ProcessingStr,1,Pos(':',ProcessingStr));
-{If Pos('#',ProcessingStr)<>0 then
-begin
-ProcessingSubStr:=Copy(ProcessingStr,Pos('#',ProcessingStr),Length(ProcessingStr));
-Delete(ProcessingStr,Pos('#',ProcessingStr),Length(ProcessingStr));
-end;
-if ProcessingSubStr<>'' then
-YAMLObjects[Length(YAMLObjects)-1].Comment:=ProcessingSubStr; }
 if i+1 < YAMLConfig.Count then
-If (Pos('-',YAMLConfig[i+1])<>0) and (Copy(YAMLConfig[i+1],Pos('-',YAMLConfig[i+1])-1,1)=' ') then //(Copy(YAMLConfig[i+1],0,Pos('-',YAMLConfig[i+1])-1)<>'/') then
+If (Pos('-',YAMLConfig[i+1])<>0) and (Copy(YAMLConfig[i+1],Pos('-',YAMLConfig[i+1])-1,1)=' ') then
 begin
 for z:=i+1 to YAMLConfig.Count-1 do
 begin
@@ -245,11 +191,9 @@ Break;
 end;
 end;
 YAMLObjects[Length(YAMLObjects)-1].IsList:=True;
-//Pos('/-',YAMLConfig[i+1])+1<>Pos('-',YAMLConfig[i+1])
 end;
-//else
 YAMLObjects[Length(YAMLObjects)-1].Value:=Copy(ProcessingStr,0,Length(ProcessingStr));
-//ProcessingStr:='';
+//Level0
 EndLvl0Proc:
 ParamParsed:=True;
 end;
@@ -342,7 +286,7 @@ ProcessingSpacesStr:=' '+ProcessingSpacesStr;
 if Pos('|',ParamValue)<>0 then
 begin
 InsObject.Value:=ValList.DelimitedText;
-end else//ValList.Count>1 then
+end else
 InsObject.Value:=ProcessingSpacesStr+ParamValue;
 ValList.Free;
 InsObject.Comment:=ParamComment;
